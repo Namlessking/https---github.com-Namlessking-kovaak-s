@@ -7,7 +7,10 @@ let finalScore = 0;
 addEventListener('click', (e) => {
   if(e.target === btn) {
     scores.forEach(element => {
-      console.log(element.value);
+      currentScore = currentScore + parseInt(element.value);
     });
+    finalScore = currentScore/10;
+    console.log(currentScore);
+    console.log(finalScore);
   }
 })
